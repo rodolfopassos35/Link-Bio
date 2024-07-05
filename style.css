@@ -1,0 +1,373 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    font-family:'Ysabeau Infant', sans-serif;
+}
+
+.container-banner{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content:center;
+    width:100%;
+    height:100vh;
+}
+.container-banner video{
+    position: absolute;
+    z-index: -2;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.foto-perfil{
+    width: 200px;
+    height:200px;
+    border-radius:200%;
+    background-image: url('assets/neymar.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    margin-bottom: 5px;
+    position:relative;
+}
+.foto-perfil::before{
+    content:" ";
+    width:215px;
+    height:215px;
+    background: linear-gradient(90deg,#ffdf00, #009c3b);
+    z-index:-1;
+    position:absolute;
+    right:-8px;
+    bottom:-8px;
+    border-radius:200px;
+}
+h1{
+    color:#fff;
+    text-shadow: 2px 2px 1px #000000;
+    font-size: 30px;
+    position: relative;
+    display:flex;
+    /* gap:40px; */
+    margin-bottom:30px;
+    margin-top:5px;
+}
+h1::before{
+    content:" ";
+    width:40px;
+    height:5px;
+    background: linear-gradient(90deg, #ffdf00, #009c3b);
+    position: absolute;
+    bottom: 1px;
+}
+h1::after{
+    content: " ";
+    width: 20px;
+    height:20px;
+    background-image: url('assets/verificado.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    position: absolute;
+    bottom: 5px;
+    left:140px;
+}
+.links-banner{
+    max-width: 768px;
+    display:flex;
+}
+nav a{
+    text-decoration: none;
+    font-size:20px;
+    font-weight: 900;
+    width: 768px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 20px;
+    padding:5px;
+    border-radius: 20px;
+    background-color:#0200006e;
+    color:#fff
+}
+nav a:hover{
+    background-color: #fff;
+    color:#000;
+}
+.youTube::before{
+    content: "";
+    background-image: url('assets/youtube.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 30px 30px;
+    position: absolute;
+    left: 330px;
+    width:30px;
+    height: 30px; 
+}
+.instagram::before{
+    content:"";
+    background-image: url('assets/instagram.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 30px 30px;
+    position: absolute;
+    left: 330px;
+    width:30px;
+    height: 30px; ;
+}
+.twitter::before{
+    content:"";
+    background-image: url('assets/twitter.png');
+    background-position: center;
+    background-repeat:no-repeat;
+    background-size: 30px 30px;
+    position:absolute;
+    left:330px;
+    width:30px;
+    height:30px; 
+}
+.facebook::before{
+    content:"";
+    background-image: url('assets/facebook.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 30px 30px;
+    position:absolute;
+    left:330px;
+    width:30px;
+    height:30px;
+}
+.twitch::before{
+    content:"";
+    background-image: url('assets/twitch.png');
+    background-repeat:no-repeat;
+    background-position: center;
+    background-size: 30px 30px;
+    width: 30px;
+    height:30px;
+    position:absolute;
+    left:330px;    
+}
+/* seção estatística */
+.container-estatistica{
+    background-image: url('assets/imagem-de-fundo.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    width:100%;
+    height: 100vh;
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    justify-content:center;
+}
+.container-estatistica h2{
+    font-size: 60px;
+    color:#fff;
+    text-shadow: 2px 7px 1px #000000;
+    font-family: 'Montserrat', sans-serif;
+    font-weight:900;
+    margin-bottom: 30px;
+}
+.container-tabela{
+    display: flex;
+    justify-content:center;
+    max-width: 768px;
+    font-size: 18px;
+}
+td{
+    text-align:center;
+    padding: 20px 30px 20px 35px;
+}
+th{
+    text-align: center;
+    padding: 20px 25px 20px 20px;
+}
+thead{
+    background-color: #0200006e;
+    color:#fff;
+    font-size: 20px;
+}
+tbody td{
+    font-size: 15px;
+    position:relative;
+}
+tbody tr:nth-child(even){
+    background-color: #0200006e;
+    color:#fff;;
+}
+tbody tr:nth-child(odd){
+    background-color: #ffffff;
+    color:#000;
+    opacity: 0.9;
+}
+
+.container-tabela td.brasil::before {
+    content: "";
+    width: 30px;
+    height: 40px;
+    background-image: url('assets/cbf.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 30px 40px;
+    position: absolute;
+    left: 5px;
+    top: 10px;
+}
+.container-tabela td.santos::before{
+    content:"";
+    width: 30px;
+    height:30px;
+    background-image: url('assets/santos.png');
+    background-repeat:no-repeat;
+    background-position:center;
+    background-size: 30px 30px;
+    position:absolute;
+    left:5px;
+    bottom:15px
+}
+.container-tabela td.barcelona::before{
+    content: "";
+    width: 30px;
+    height: 30px;
+    background-image: url('assets/barcelona.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 30px 30px;
+    position: absolute;
+    left:3px;
+}
+
+.container-tabela td.psg::before{
+    content: "";
+    width: 40px;
+    height: 40px;
+    background-image: url('assets/psg.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 40px 40px;
+    position: absolute;
+    left: 5px;
+    bottom: 10px;
+}
+.container-tabela td.al-hilal::before{
+    content: "";
+    width: 30px;
+    height: 30px;
+    background-image: url('assets/alhilal.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 30px 30px;
+    position: absolute;
+    left: 3px;
+    bottom: 17px;
+}
+/* media queries */
+
+@media(max-width:425px){
+    .foto-perfil{
+        width:100px;
+        height:100px;
+    }
+    .foto-perfil::before{
+        width:115px;
+        height:115px;
+    }
+    .links-banner{
+        width: 300px;
+        margin:0 auto;
+    }
+    nav a{
+        width: 250px;
+        font-size: 15px;
+    }
+    .youTube::before{
+        width: 20px;
+        height: 20px;
+        border-radius: 3px;
+        position:sticky;
+        margin-right:10px;
+    }
+    .instagram::before{
+        width: 20px;
+        height: 20px;
+        position:sticky;
+        margin-right:20px;
+    }
+    .twitter::before{
+        width: 20px;
+        height: 20px;
+        position:sticky;
+        margin-right:30px;
+    }
+    .facebook::before{
+        width: 20px;
+        height: 20px;
+        position:sticky;
+        margin-right:20px
+    }
+    .twitch::before{
+        width: 20px;
+        height: 20px;
+        position:sticky;
+        margin-right:30px;
+    }
+    .container-estatistica h2 {
+        font-size:40px;
+    }
+    .container-tabela {
+        max-width:335px;
+    }
+    .brasil::before,
+    .santos::before,
+    .barcelona::before,
+    .psg::before,
+    .al-hilal::before{
+        display:none;
+    }
+
+    td,
+    th {
+        padding: 10px 10px;
+    }
+
+    thead {
+        font-size: 10px;
+    }
+
+    tbody td {
+        font-size: 8px;
+    }
+    .youTube::before,
+    .instagram::before,
+    .twitter::before,
+    .facebook::before,
+    .twitch::before{
+        left:10px;
+    }
+}
+@media(max-width:800px){
+    .youTube::before,
+    .instagram::before,
+    .twitter::before,
+    .facebook::before,
+    .twitch::before {
+        left:100px;
+    }
+    .foto-perfil{
+        width:150px;
+        height:150px;
+    }
+    .foto-perfil::before{
+        width:165px;
+        height:165px;
+    }
+    .links-banner{
+        max-width:700px;
+        }
+    nav a{
+        max-width:650px;
+        font-size:20px;
+    }
+}
