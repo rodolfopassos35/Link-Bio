@@ -265,7 +265,112 @@ tbody tr:nth-child(odd){
 }
 /* media queries */
 
-@media(max-width:425px){
+@media (max-width: 768px) {
+    .foto-perfil {
+        width: 150px;
+        height: 150px;
+    }
+    .foto-perfil::before {
+        width: 165px;
+        height: 165px;
+    }
+    h1 {
+        font-size: 25px;
+    }
+    h1::after {
+        left: 100px;
+    }
+    nav a {
+        font-size: 18px;
+        width:650px;
+        margin: 10px ;
+    }
+    .links-banner{
+        width:90%;
+        margin: 0 auto;
+    }
+    .youTube::before, .instagram::before, .twitter::before, .facebook::before, .twitch::before {
+        left: 60px;
+    }
+    .container-estatistica h2 {
+        font-size: 50px;
+    }
+    .container-tabela {
+        font-size: 16px;
+    }
+    td {
+        padding: 15px;
+    }
+    .brasil::before,
+    .santos::before,
+    .barcelona::before,
+    .psg::before,
+    .al-hilal::before{
+        display:none;
+    }
+}
+
+@media (max-width: 480px) {
+    .foto-perfil {
+        width: 120px;
+        height: 120px;
+    }
+    .foto-perfil::before {
+        width: 135px;
+        height: 135px;
+    }
+    h1 {
+        font-size: 20px;
+    }
+    h1::after {
+        left: 90px;        
+    }
+    h1::before{
+        width:25px;
+    }
+    nav a {
+        font-size: 15px;
+        width: 300px;
+        margin: 5px auto;
+    }
+    .links-banner{
+        width:300px;
+    }
+    .youTube::before, .instagram::before, .twitter::before, .facebook::before, .twitch::before {
+        left: 20%;
+        width:20px;
+        height:20px;
+        border-radius:4px;
+    }
+    .container-estatistica h2 {
+        font-size: 40px;
+    }
+    .container-tabela {
+        font-size: 5px;
+        max-width:300px;
+    }
+    td,
+    th {
+        padding: 10px 10px;
+    }
+
+    thead {
+        font-size: 10px;
+    }
+
+    tbody td {
+        font-size: 8px;
+    }
+    .brasil::before,
+    .santos::before,
+    .barcelona::before,
+    .psg::before,
+    .al-hilal::before{
+    display:none;
+    }
+}
+
+/* @media(min-width:300px) and (max-width:425px){
     .foto-perfil{
         width:100px;
         height:100px;
@@ -275,43 +380,45 @@ tbody tr:nth-child(odd){
         height:115px;
     }
     .links-banner{
-        width: 300px;
+        width: 350px;
         margin:0 auto;
+        border:2px solid red;
+        position:relative;
     }
     nav a{
-        width: 250px;
-        font-size: 15px;
+        width: 350px;
+        font-size: 10px;
+        margin: 10px auto;
+        position:relative;
     }
     .youTube::before{
         width: 20px;
         height: 20px;
         border-radius: 3px;
-        position:sticky;
-        margin-right:10px;
+        position:static;
     }
     .instagram::before{
         width: 20px;
         height: 20px;
-        position:sticky;
+        position:static;
         margin-right:20px;
     }
     .twitter::before{
         width: 20px;
         height: 20px;
-        position:sticky;
+        position:static;
         margin-right:30px;
     }
     .facebook::before{
         width: 20px;
         height: 20px;
-        position:sticky;
-        margin-right:20px
+        position:static;
     }
     .twitch::before{
         width: 20px;
         height: 20px;
-        position:sticky;
-        margin-right:30px;
+        position:static;
+        left:10px;
     }
     .container-estatistica h2 {
         font-size:40px;
@@ -339,13 +446,6 @@ tbody tr:nth-child(odd){
     tbody td {
         font-size: 8px;
     }
-    .youTube::before,
-    .instagram::before,
-    .twitter::before,
-    .facebook::before,
-    .twitch::before{
-        left:10px;
-    }
 }
 @media(max-width:800px){
     .youTube::before,
@@ -370,4 +470,4 @@ tbody tr:nth-child(odd){
         max-width:650px;
         font-size:20px;
     }
-}
+} */
